@@ -1,5 +1,4 @@
 import { View, StyleSheet } from 'react-native';
-import Text from './Text';
 import RepositoryItemStatistics from './RepositoryItemStatistics';
 import RepositoryItemBasicInfo from './RepositoryItemBasicInfo';
 import theme from '../theme';

@@ -3,6 +3,7 @@ import Constants from 'expo-constants';
 
 import theme from '../theme';
 import AppBarTab from './AppBarTab';
+import useSignInCheck from '../hooks/useSignInCheck';
 
 const styles = StyleSheet.create({
   container: {
@@ -18,6 +19,8 @@ const styles = StyleSheet.create({
 });
 
 const AppBar = () => {
+  const { user } = useSignInCheck();
+  
   return (
     <View style={styles.container}>
       <ScrollView 
@@ -25,7 +28,10 @@ const AppBar = () => {
         horizontal
       >
         <AppBarTab text='Repositories' link='/' />
-        <AppBarTab text='Sign in' link='/signin' />
+        <AppBarTab 
+          text={ user ? 'Sign out' : 'Sign in' }
+          link={ user ? '/signout' : '/signin' } 
+        />
       </ScrollView>
     </View>
   );
