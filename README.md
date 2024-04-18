@@ -1,3 +1,4 @@
 ## Full Stack Open - Part 10 React Native
 
-This repository is for Part 10 React Native exercises in course Full Stack Open
+This is for parts 1-3. Final version with full restart including parts 1-4 is in repository:
+https://github.com/SamuYliK/FullStackOpen-Part10-Final.git
